@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+  <title>CRUD hbp</title>
+</head>
+<body>
+
+  <h2 class="judul">Daftar Mahasiswa</h2>
+
+  <div class="container">
+    <!-- form -->
+    <form class="form-group" autocomplete="off">
+      <div class="form-control">
+        <input type="text" class="nim" name="nim" id="nim" placeholder="masukkan nim" required>
+      </div>
+
+      <div class="form-control">
+        <input type="text" class="nama" name="nama" id="nama" placeholder="masukkan nama" required>
+      </div>
+
+      <div class="form-control">
+        <input type="text" class="jurusan" name="jurusan" id="jurusan" placeholder="masukkan jurusan" required>
+      </div>
+
+      <button type="submit" class="btn btn-save">Save</button>
+    </form>
+    <!-- -- -->
+
+    <!-- daftar mahasiswa -->
+    <div class="daftar">
+      <table class="table-list">
+        <thead>
+          <tr>
+            <th width="10%">NIM</th>
+            <th width="40%">Nama</th>
+            <th width="40%">Jurusan</th>
+            <th width="10%">Action</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- data -->
+          <!-- <tr>
+            <td>&times;</td>
+            <td>&times;</td>
+            <td>&times;</td>
+            <td colspan="2">
+              <button type="button" class="btn btn-edit" title="edit button"><i class="fas fa-edit"></i></button>
+              <button type="button" class="btn btn-delete" title="delete button"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+    <!-- -- -->
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

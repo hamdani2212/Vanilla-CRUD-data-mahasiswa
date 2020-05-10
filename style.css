@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.judul {
+  font-size: 41px;
+  text-align: center;
+  margin: 33px;
+  letter-spacing: 3px;
+  color: #3bb7ff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 19px;
+  border: 1px solid #232323;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  border: 1px solid #dedede;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 1;
+  align-self: flex-start;
+}
+
+.form-control {
+  margin-bottom: 13px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-control input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #909090;
+  padding: 5px;
+  font-size: 12px;
+  color: #232323;
+}
+.form-control input::placeholder {
+  color: #909090;
+}
+
+.daftar {
+  border: 1px solid #dedede;
+  flex: 2;
+  margin-left: 10px;
+  width: 100%;
+  padding: 3px;
+}
+
+.table-list {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid rgba(0, 160, 252, 0.2);
+}
+
+th, td {
+  padding: 8px;
+  color: #232323;
+  border-right: 1px solid rgba(0, 160, 252, 0.2);
+}
+
+th:nth-last-child(1), 
+td:nth-last-child(1) {
+  border-right: none;
+}
+
+tr:nth-child(odd){background-color: #f1f1f1}
+
+th {
+  background-color: #3bb7ff;
+  color: #fafafa;
+}
+
+.btn {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.btn-save {
+  padding: 3px 19px;
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px solid #3bdd3b;
+  background: #ffffff;
+  color: #3bdd3b;
+  transition: .3s;
+}
+.btn-save:hover {
+  background: #3bdd3b;
+  color: #ffffff;
+}
+
+.btn-edit {
+  color: #ee9e0a;
+  transition: .3s;
+  background: transparent;
+  margin-right: 10px;
+  font-size: 17px;
+}
+
+.btn-delete {
+  color: #dd3b3b;
+  transition: .3s;
+  background: transparent;
+  font-size: 17px;
+}
+
+.btn-delete:hover, 
+.btn-edit:hover {
+  opacity: .7;
+}
